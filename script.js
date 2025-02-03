@@ -1,24 +1,24 @@
 const messages = [
-    "Are you sure?",
-    "Really sure??",
-    "Are you positive?",
-    "Pookie please...",
-    "Just think about it!",
-    "If you say no, I will be really sad...",
-    "I will be very sad...",
-    "I will be very very very sad...",
-    "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
+    "Estas seguraaa?",
+    "Realmente segura??",
+    "Puedes ser mas positiva >:c?",
+    "Mi amoor porfavoor...",
+    "Solo piénsalo un ratico",
+    "Usted me dice que no, y lloro...",
+    "me estoy poniendo muy triste...",
+    "me estoy poniendo demasiado demasiado demasiadoo triste...",
+    "Ok esta bien, voy a dejar de preguntar...",
+    "era broma JAKSJA, solo di que si egh ❤️"
 ];
 
 let messageIndex = 0;
 
 function handleNoClick() {
-    const noButton = document.querySelector('.no-button');
-    const yesButton = document.querySelector('.yes-button');
+    const noButton = document.querySelector('.nop-button');
+    const yesButton = document.querySelector('.sipp-button');
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
-    const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+    const currentSize = parseFloat(window.getComputedStyle(sippButton).fontSize);
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
 }
 
