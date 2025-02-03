@@ -13,15 +13,15 @@ const messages = [
 
 let messageIndex = 0;
 
-function handleNoClick() {
-    const noButton = document.querySelector('.nop-button');
-    const yesButton = document.querySelector('.sipp-button');
-    noButton.textContent = messages[messageIndex];
+function handleNopClick() {
+    const noButton = document.querySelector('.Nop-button');
+    const yesButton = document.querySelector('.Sipp-button');
+    NopButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
-    const currentSize = parseFloat(window.getComputedStyle(sippButton).fontSize);
-    yesButton.style.fontSize = `${currentSize * 1.5}px`;
+    const currentSize = parseFloat(window.getComputedStyle(SippButton).fontSize);
+    SippButton.style.fontSize = `${currentSize * 1.5}px`;
 }
 
-function handleYesClick() {
+function handleSippClick() {
     window.location.href = "yes_page.html";
 }
